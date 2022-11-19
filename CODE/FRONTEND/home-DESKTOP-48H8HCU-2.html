@@ -23,6 +23,7 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="csshome.css" />
+
     </head>
     <body>
         <!-- Optional JavaScript -->
@@ -81,8 +82,7 @@
                 </div>
 
                 <!--AÑADIR TAREA-->
-                <a class="nav-link" href="#" data-toggle="modal"
-                data-target="#nuevaTarea">
+                <a class="nav-link" href="">
                     <img
                         src="imagenes/plus.png"
                         class="rounded-circle"
@@ -922,11 +922,7 @@
                         <button type="button" class="btn btn-danger">
                             Si, eliminar
                         </button>
-                        <button
-                            type="button"
-                            class="btn btn-light"
-                            data-dismiss="modal"
-                        >
+                        <button type="button" class="btn btn-light" data-dismiss="modal">
                             Cancelar
                         </button>
                     </div>
@@ -999,105 +995,13 @@
                         <button type="button" class="btn btn-success">
                             Editar
                         </button>
-                        <button
-                            type="button"
-                            class="btn btn-light"
-                            data-dismiss="modal"
-                        >
+                        <button type="button" class="btn btn-light" data-dismiss="modal">
                             Cancelar
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- MODAL NUEVA TAREA -->
-        <div class="modal fade" id="nuevaTarea" role="dialog">
-          <div class="modal-dialog">
-              <div class="modal-content">
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                      <h4 class="modal-title">Nueva Tarea</h4>
-                      <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                      >
-                          &times;
-                      </button>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                      <div class="col-lg-12">
-                          <div class="card" id="card">
-                              <div class="card-body">
-                                  <div class="row mb-3">
-                                      <div class="col-sm-3">
-                                          <h6 class="mb-0">Tarea</h6>
-                                      </div>
-                                      <div class="col-sm-9 text-secondary">
-                                          <input
-                                              type="text"
-                                              class="form-control"
-                                              value="Tarea 1"
-                                          />
-                                      </div>
-                                  </div>
-                                  <div class="row mb-3">
-                                      <div class="col-sm-3">
-                                          <h6 class="mb-0">Usuarios</h6>
-                                      </div>
-                                      <div class="col-sm-9 text-secondary">
-                                          <input
-                                              type="text"
-                                              class="form-control"
-                                              value="Ana, Vale, Naim"
-                                          />
-                                      </div>
-                                  </div>
-                                  <div class="row mb-3">
-                                      <div class="col-sm-3">
-                                          <h6 class="mb-0">Etiquetas</h6>
-                                      </div>
-                                      <div class="col-sm-9 text-secondary">
-                                          <input
-                                              type="text"
-                                              class="form-control"
-                                              value="URGENTE, WORK, SCHOOL"
-                                          />
-                                      </div>
-                                  </div>
-                                  <div class="row mb-3">
-                                    <div class="col-sm-3">
-                                        <h6 class="mb-0">Fecha</h6>
-                                    </div>
-                                    <div class="col-sm-9 text-secondary">
-                                        <input
-                                            type="date"
-                                            class="form-control"
-                                        />
-                                    </div>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-success">
-                          Guardar
-                      </button>
-                      <button
-                          type="button"
-                          class="btn btn-light"
-                          data-dismiss="modal"
-                      >
-                          Cancelar
-                      </button>
-                  </div>
-              </div>
-          </div>
-      </div>
 
         <!-- ALERTA DE TAREA COMPLETADA -->
         <script>

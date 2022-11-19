@@ -1,5 +1,5 @@
 .containertasks{
-    margin-top:50px;
+    margin-top:100px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -55,7 +55,7 @@
 }
 
 .scroll-area-sm {
-    height: 288px;
+    height: 450px;
     overflow-x: hidden;
 }
 
@@ -156,3 +156,31 @@
 #navbar{
     background: linear-gradient(145deg, #9cf1ed, #dfe07f);
 }
+
+.pie {
+    /* (A1) CIRCLE */
+    width: 200px; height: 200px;
+    border-radius: 50%;
+   
+    /* (A2) SEGMENTS */
+    background: conic-gradient(
+      lightseagreen 0deg 45deg,
+      lightcyan 45deg 190deg,
+      lightblue 190deg 360deg
+    );
+  }
+
+/* (B) LEGEND */
+/* (B1) LEGEND CONTAINER */
+.legend {
+    display: grid;
+    grid-template-columns: 30px auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+   
+  /* (B2) SEGMENTS */
+  .legend div { padding: 3px; }
+  .segment1 { background: lightblue; }
+  .segment2 { background: lightcyan; }
+  .segment3 { background: lightseagreen; }
